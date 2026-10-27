@@ -87,7 +87,7 @@ public class TextList : MonoBehaviour
             ChoiceButton[0].SetActive(true);
             ChoiceButtonText[0].text = "완료";
             TextBox = DataBase.instance.MapTileArrayYes.FindAll(x => x.No == PlayerSettingData.instance.Mapline[PlayerSettingData.instance.PlayerPin].No);
-            MidText.text = TextBox[0].Explain;
+            MidText.text = TextBox[check].Explain;
             return;
         }
         

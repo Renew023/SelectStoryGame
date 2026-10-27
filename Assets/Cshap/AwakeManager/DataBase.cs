@@ -131,7 +131,7 @@ public class DataBase : MonoBehaviour
     }
 
     public void MapTileNo(){
-        //MapTileArrayNo.Add(new MapTile("1", "함정", "밟고 간다", "이런 것도 기연일까요? 압정에 자극을 받아 강해졌습니다", "Hard", "STR", 1));
+        MapTileArrayNo.Add(new MapTile("1", "함정", "밟고 간다", "이런 것도 기연일까요? 압정에 자극을 받아 강해졌습니다", "Hard", "STR", 1));
         //MapTileArrayNo.Add(new MapTile())
     }
 

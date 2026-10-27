@@ -279,12 +279,12 @@ public class ChoiceRoot : MonoBehaviour
             {
                 if(TextList.instance.HeroEffect[i].No == No)
                 {
-                    Debug.Log("시발 이게 수행되");
+                    Debug.Log("1확인");
                     TextList.instance.HeroEffect[i].Turn += Turned;
                     return;
                 }  
             } 
-            Debug.Log("시발 이게 수행되면 안됨");
+            Debug.Log("2확인");
             TextList.instance.HeroEffect.Add(new Effect(DataBase.instance.EffectArray.Find(x => x.No == No)));
             TextList.instance.HeroEffect[TextList.instance.HeroEffect.Count-1].Turn += Turned-1;
             
@@ -295,12 +295,12 @@ public class ChoiceRoot : MonoBehaviour
             {
                 if(TextList.instance.MonsterEffect[i].No == No)
                 {
-                    Debug.Log("시발 이게 수행되");
+                    Debug.Log("3확인");
                     TextList.instance.MonsterEffect[i].Turn += Turned;
                     return;
                 }  
             } 
-            Debug.Log("시발 이게 수행되면 안됨");
+            Debug.Log("4확인");
             TextList.instance.MonsterEffect.Add(new Effect(DataBase.instance.EffectArray.Find(x => x.No == No)));
             TextList.instance.MonsterEffect[TextList.instance.MonsterEffect.Count-1].Turn += Turned-1;
     }
